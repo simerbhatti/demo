@@ -1,0 +1,14 @@
+This demo app is made to run inside AWS EC2 container 
+SSH inside the EC2 instance
+ssh -i "Simer_Aws_Key.pem" ec2-user@ec2-18-116-63-105.us-east-2.compute.amazonaws.com
+For MAC : sudo yum install links  // yum is the package manager for Amazon Linux, CentOS, and Red Hat Enterprise Linux, and allows you to install, update, and manage software packages on your system.
+ yum list installed
+ yum repolist all
+ yum install java-11-amazon-corretto.x86_64
+yum search "git"
+sudo yum install git.x86_64
+Created  manifest.tx with main class path
+ yum install maven
+ mvn clean install
+ In the path ~ : cp demo/target/demo-0.0.1-SNAPSHOT.jar demo.jar
+ java -jar demo.jar
