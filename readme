@@ -17,3 +17,6 @@ In the path ~ : cp demo/target/demo-0.0.1-SNAPSHOT.jar demo.jar
  use docker sudo yum install docker.x86_64
 Go inside demo folder which has Dockerfile -->  docker build -t demo .
  docker run -t -i -p 80:80 demo
+
+sudo yum install iptables
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8089
