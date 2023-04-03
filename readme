@@ -10,5 +10,10 @@ sudo yum install git.x86_64
 Created  manifest.tx with main class path
  yum install maven
  mvn clean install
- In the path ~ : cp demo/target/demo-0.0.1-SNAPSHOT.jar demo.jar
+
+In the path ~ : cp demo/target/demo-0.0.1-SNAPSHOT.jar demo.jar
  java -jar demo.jar
+              OR
+ use docker sudo yum install docker.x86_64
+Go inside demo folder which has Dockerfile -->  docker build -t demo .
+ docker run -t -i -p 80:80 demo
